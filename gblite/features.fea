@@ -22,6 +22,7 @@ languagesystem latn dflt; # Latin default
 languagesystem grek dflt; 
 languagesystem hani dflt; 
 languagesystem kana dflt; 
+languagesystem bopo dflt; 
 #
 # Global glyph class definitions
 #
@@ -32,11 +33,11 @@ languagesystem kana dflt;
 # Global lookup definitions
 #
 
-lookup u5355u5B57u5F62u66FFu63624 {
+lookup SingleSubstitution4 {
     sub colon by colon.time;
-} u5355u5B57u5F62u66FFu63624;
+} SingleSubstitution4;
 
-lookup u8FDEu5B57u66FFu63622 {
+lookup LigatureSubstitution2 {
     sub exclam exclam by exclamdbl;
     sub exclam question by exclamationquestionmark;
     sub A M by A_M;
@@ -150,9 +151,9 @@ lookup u8FDEu5B57u66FFu63622 {
     sub pfullwidth mfullwidth by squarepm;
     sub pfullwidth sfullwidth by squareps;
     sub sfullwidth efullwidth cfullwidth by s_e_c;
-} u8FDEu5B57u66FFu63622;
+} LigatureSubstitution2;
 
-lookup u5355u5B57u5F62u66FFu63621 {
+lookup SingleSubstitution1 {
     sub zero by zeroinferior;
     sub one by oneinferior;
     sub two by twoinferior;
@@ -173,9 +174,9 @@ lookup u5355u5B57u5F62u66FFu63621 {
     sub fullwidthseven by seveninferior;
     sub fullwidtheight by eightinferior;
     sub fullwidthnine by nineinferior;
-} u5355u5B57u5F62u66FFu63621;
+} SingleSubstitution1;
 
-lookup u5355u5B57u5F62u66FFu63622 {
+lookup SingleSubstitution2 {
     sub zero by zerosuperior;
     sub one by onesuperior;
     sub two by twosuperior;
@@ -196,9 +197,9 @@ lookup u5355u5B57u5F62u66FFu63622 {
     sub fullwidthseven by sevensuperior;
     sub fullwidtheight by eightsuperior;
     sub fullwidthnine by ninesuperior;
-} u5355u5B57u5F62u66FFu63622;
+} SingleSubstitution2;
 
-lookup u5355u5B57u5F62u66FFu63623 {
+lookup SingleSubstitution3 {
     sub hyphen by presentationformforverticalendash;
     sub horizontalbar by presentationformforverticalemdash;
     sub doubleverticalline by doubleverticalline.vert;
@@ -503,9 +504,9 @@ lookup u5355u5B57u5F62u66FFu63623 {
     sub u16FF3 by u16FF3.vert;
     sub kosmallhira by kosmallhira.vert;
     sub kosmallkata by kosmallkata.vert;
-} u5355u5B57u5F62u66FFu63623;
+} SingleSubstitution3;
 
-lookup u5355u5B57u5F62u8C03u65741 {
+lookup SingleAdjustment1 {
     pos leftpointinganglebracket <-500 0 -500 0>;
     pos rightpointinganglebracket -500;
     pos ideographiccomma -500;
@@ -547,9 +548,9 @@ lookup u5355u5B57u5F62u8C03u65741 {
     pos quotedblright.full -500;
     pos quoteleft.full <-500 0 -500 0>;
     pos quoteright.full -500;
-} u5355u5B57u5F62u8C03u65741;
+} SingleAdjustment1;
 
-lookup u5355u5B57u5F62u8C03u65742 {
+lookup SingleAdjustment2 {
     pos katakanamiddledot <0 250 0 -500>;
     pos presentationformforverticalcomma <0 0 0 -500>;
     pos presentationformforverticalideographiccomma <0 0 0 -500>;
@@ -583,16 +584,16 @@ lookup u5355u5B57u5F62u8C03u65742 {
     pos rightwhiteparenthesis.full.vert <0 0 0 -500>;
     pos leftwhitesquarebracket.vert <0 500 0 -500>;
     pos rightwhitesquarebracket.vert <0 0 0 -500>;
-} u5355u5B57u5F62u8C03u65742;
+} SingleAdjustment2;
 
-lookup u5355u5B57u5F62u8C03u65743 {
+lookup SingleAdjustment3 {
     pos ideographicleveltonemarkcomb <500 1000 0 -1000>;
     pos ideographicrisingtonemarkcomb <500 1000 0 -1000>;
     pos ideographicdepartingtonemarkcomb <500 1000 0 -1000>;
     pos ideographicenteringtonemarkcomb <500 1000 0 -1000>;
     pos katakanahiraganavoicedsoundmarkcomb <500 1000 0 -1000>;
     pos katakanahiraganasemivoicedsoundmarkcomb <500 1000 0 -1000>;
-} u5355u5B57u5F62u8C03u65743;
+} SingleAdjustment3;
 
 #
 # Feature definitions
@@ -698,7 +699,7 @@ feature afrc {
 
 feature dlig {
     # script DFLT;
-        lookup u8FDEu5B57u66FFu63622;
+        lookup LigatureSubstitution2;
 
 
 } dlig;
@@ -803,26 +804,26 @@ feature frac {
 
 feature subs {
     # script DFLT;
-        lookup u5355u5B57u5F62u66FFu63621;
+        lookup SingleSubstitution1;
 
 } subs;
 
 feature sups {
     # script DFLT;
-        lookup u5355u5B57u5F62u66FFu63622;
+        lookup SingleSubstitution2;
 
 } sups;
 
 feature vert {
     # script DFLT;
-        lookup u5355u5B57u5F62u66FFu63623;
-        lookup u5355u5B57u5F62u8C03u65743;
+        lookup SingleSubstitution3;
+        lookup SingleAdjustment3;
 
 } vert;
 
 feature calt {
     # script DFLT;
-    sub @CG_1 colon' lookup u5355u5B57u5F62u66FFu63624 @CG_1;
+    sub @CG_1 colon' lookup SingleSubstitution4 @CG_1;
 } calt;
 
 feature salt {
@@ -832,13 +833,13 @@ feature salt {
 
 feature halt {
     # script DFLT;
-        lookup u5355u5B57u5F62u8C03u65741;
+        lookup SingleAdjustment1;
 
 } halt;
 
 feature vhal {
     # script DFLT;
-        lookup u5355u5B57u5F62u8C03u65742;
+        lookup SingleAdjustment2;
 
 } vhal;
 
