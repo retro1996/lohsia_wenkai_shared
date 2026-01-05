@@ -825,7 +825,7 @@ lookup PairAdjustment1 {
 lookup ChainedContextualGPOS1 {
     pos  [uni3015 uni3009 uni300b uni300d uni300f uni3017 uni3011 uni301e uniff09 uniff3d uniff5d quoteright.full quotedblright.full]' 50 [uniff1a uniff1b uniff01 uniff1f]' -250 [uni3014 uni3008 uni300a uni300c uni300e uni3016 uni3010 uni301d uniff08 uniff3b uniff5b quoteleft.full quotedblleft.full] ;
     pos  [uni3015 uni3009 uni300b uni300d uni300f uni3017 uni3011 uni301e uniff09 uniff3d uniff5d quoteright.full quotedblright.full]' -50 [uni3001 uni3002 uniff0c uniff0e]' -50 [uni3014 uni3008 uni300a uni300c uni300e uni3016 uni3010 uni301d uniff08 uniff3b uniff5b quoteleft.full quotedblleft.full] ;
-} ChainedContextualGPOS2;
+} ChainedContextualGPOS1;
 
 lookup PairAdjustment2 {
     pos [unife10 unife12 unife11 period.full.vert] [unife17 unife35 unife39 unife3f unife3d unife41 unife43 unife3b unife37 unife47] <0 0 0 -800>;
