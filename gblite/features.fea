@@ -797,6 +797,52 @@ lookup SingleAdjustment3 {
     pos katakanahiraganasemivoicedsoundmarkcomb <500 1000 0 -1000>;
 } SingleAdjustment3;
 
+lookup PairAdjustment1 {
+    pos [uni3001 uni3002 uniff0c uniff0e] [uni3015 uni3009 uni300b uni300d uni300f uni3017 uni3011 uni301e uniff09 uniff3d uniff5d quoteright.full quotedblright.full] -500;
+    pos [uni3001 uni3002 uniff0c uniff0e] [uni3014 uni3008 uni300a uni300c uni300e uni3016 uni3010 uni301d uniff08 uniff3b uniff5b quoteleft.full quotedblleft.full] -600;
+    pos [uni3015 uni3009 uni300b uni300d uni300f uni3017 uni3011 uni301e uniff09 uniff3d uniff5d] [uni3014 uni3008 uni300a uni300c uni300e uni3016 uni3010 uni301d uniff08 uniff3b uniff5b] -600;
+    pos [quoteright.full quotedblright.full] [uni3014 uni3008 uni300a uni300c uni300e uni3016 uni3010 uni301d uniff08 uniff3b uniff5b] -600;
+    pos [uni3015 uni3009 uni300b uni300d uni300f uni3017 uni3011 uni301e uniff09 uniff3d uniff5d] [quoteleft.full quotedblleft.full] -600;
+    pos [uni3014 uni3008 uni300a uni300c uni300e uni3016 uni3010 uni301d uniff08 uniff3b uniff5b] [uni3014 uni3008 uni300a uni300c uni300e uni3016 uni3010 uni301d uniff08 uniff3b uniff5b quoteleft.full quotedblleft.full] -400;
+    pos [uni3015 uni3009 uni300b uni300d uni300f uni3017 uni3011 uni301e uniff09 uniff3d uniff5d] [uni3015 uni3009 uni300b uni300d uni300f uni3017 uni3011 uni301e uniff09 uniff3d uniff5d quoteright.full quotedblright.full] -400;
+    pos [quoteleft.full quotedblleft.full] [uni3014 uni3008 uni300a uni300c uni300e uni3016 uni3010 uni301d uniff08 uniff3b uniff5b ] -400;
+    pos [quoteright.full quotedblright.full] [uni3015 uni3009 uni300b uni300d uni300f uni3017 uni3011 uni301e uniff09 uniff3d uniff5d ] -400;
+    pos [uni3015 uni3009 uni300b uni300d uni300f uni3017 uni3011 uni301e uniff09 uniff3d uniff5d] [uni3001 uni3002 uniff0c uniff0e] -500;
+    pos [quoteright.full quotedblright.full] [uni3001 uni3002 uniff0c uniff0e] -500;
+    pos [quoteright.full quotedblright.full] [quoteleft.full quotedblleft.full] -800;
+    pos [quoteleft.full quotedblleft.full] [quoteleft.full quotedblleft.full] -500;
+    pos [quoteright.full quotedblright.full] [quoteright.full quotedblright.full] -500;
+    pos uniff01 uniff01 -600;
+    pos uniff01 uniff1f -500;
+    pos uniff1f uniff01 -500;
+    pos uniff1f uniff1f -400;
+    pos [uni3015 uni3009 uni300b uni300d uni300f uni3017 uni3011 uni301e uniff09 uniff3d uniff5d quoteright.full quotedblright.full] [uniff1a uniff1b uniff01 uniff1f] -500;
+    pos [uniff1a uniff1b uniff01 uniff1f] [uni3014 uni3008 uni300a uni300c uni300e uni3016 uni3010 uni301d uniff08 uniff3b uniff5b quoteleft.full quotedblleft.full] -600;
+    pos [uniff1a uniff1b uniff01] [uni3015 uni3009 uni300b uni300d uni300f uni3017 uni3011 uni301e uniff09 uniff3d uniff5d quoteright.full quotedblright.full] -500;
+    pos uniff1f [uni3015 uni3009 uni300b uni300d uni300f uni3017 uni3011 uni301e uniff09 uniff3d uniff5d quoteright.full quotedblright.full] -400;
+} PairAdjustment1;
+
+lookup ChainedContextualGPOS1 {
+    pos  [uni3015 uni3009 uni300b uni300d uni300f uni3017 uni3011 uni301e uniff09 uniff3d uniff5d quoteright.full quotedblright.full]' 50 [uniff1a uniff1b uniff01 uniff1f]' -250 [uni3014 uni3008 uni300a uni300c uni300e uni3016 uni3010 uni301d uniff08 uniff3b uniff5b quoteleft.full quotedblleft.full] ;
+    pos  [uni3015 uni3009 uni300b uni300d uni300f uni3017 uni3011 uni301e uniff09 uniff3d uniff5d quoteright.full quotedblright.full]' -50 [uni3001 uni3002 uniff0c uniff0e]' -50 [uni3014 uni3008 uni300a uni300c uni300e uni3016 uni3010 uni301d uniff08 uniff3b uniff5b quoteleft.full quotedblleft.full] ;
+} ChainedContextualGPOS2;
+
+lookup PairAdjustment2 {
+    pos [unife10 unife12 unife11 period.full.vert] [unife17 unife35 unife39 unife3f unife3d unife41 unife43 unife3b unife37 unife47] <0 0 0 -800>;
+    pos [unife10 unife12 unife11 period.full.vert] [unife18 unife36 unife3a unife40 unife3e unife42 unife44 unife3c unife38 unife48] <0 0 0 -500>;
+    pos [unife13 unife14] [unife17 unife35 unife39 unife3f unife3d unife41 unife43 unife3b unife37 unife47] <0 0 0 -550>;
+    pos [unife15 unife16] [unife17 unife35 unife39 unife3f unife3d unife41 unife43 unife3b unife37 unife47] <0 0 0 -500>;
+    pos [unife17 unife35 unife39 unife3f unife3d unife41 unife43 unife3b unife37 unife47] [unife17 unife35 unife39 unife3f unife3d unife41 unife43 unife3b unife37 unife47] <0 0 0 -400>;
+    pos [unife18 unife36 unife3a unife40 unife3e unife42 unife44 unife3c unife38 unife48] [unife18 unife36 unife3a unife40 unife3e unife42 unife44 unife3c unife38 unife48] <0 0 0 -400>;
+    pos [unife18 unife36 unife3a unife40 unife3e unife42 unife44 unife3c unife38 unife48] [unife17 unife35 unife39 unife3f unife3d unife41 unife43 unife3b unife37 unife47] <0 0 0 -600>;
+    pos [unife18 unife36 unife3a unife40 unife3e unife42 unife44 unife3c unife38 unife48] [unife10 unife12 unife11 unife13 unife14 unife15 unife16 period.full.vert ] <0 0 0 -500>;
+} PairAdjustment2;
+
+lookup ChainedContextualGPOS2 {
+    pos [unife18 unife36 unife3a unife40 unife3e unife42 unife44 unife3c unife38 unife48] ' <0 0 0 -10> [unife10 unife12 unife11 period.full.vert]' <0 0 0 -10> [unife17 unife35 unife39 unife3f unife3d unife41 unife43 unife3b unife37 unife47];
+    pos [unife18 unife36 unife3a unife40 unife3e unife42 unife44 unife3c unife38 unife48] ' <0 0 0 -10> [unife13 unife14 unife15 unife16]' <0 0 0 -10> [unife17 unife35 unife39 unife3f unife3d unife41 unife43 unife3b unife37 unife47];
+} ChainedContextualGPOS2;
+
 #
 # Feature definitions
 #
@@ -1052,3 +1098,14 @@ feature ccmp {
         lookup ChainedContextualGSUB2;
 } ccmp;
 
+feature chws {
+    # script DFLT;
+        lookup PairAdjustment1;
+        lookup ChainedContextualGPOS1;
+} chws;
+
+feature vchw {
+    # script DFLT;
+        lookup PairAdjustment2;
+        lookup ChainedContextualGPOS2;
+} vchw;
