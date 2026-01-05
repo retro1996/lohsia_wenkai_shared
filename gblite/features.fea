@@ -506,7 +506,7 @@ lookup SingleSubstitution3 {
     sub kosmallkata by kosmallkata.vert;
 } SingleSubstitution3;
 
-lookup SingleSubstitution5 {
+lookup LigatureSubstitution3 {
     sub A gravecomb by Agrave;
     sub A acutecomb by Aacute;
     sub A doubleacutecomb by A_doubleacutecomb;
@@ -693,11 +693,11 @@ lookup SingleSubstitution5 {
     sub C circumflexcomb by Ccircumflex;  
     sub S circumflexcomb by Scircumflex;  
     sub Z circumflexcomb by Zcircumflex;
-} SingleSubstitution5;
+} LigatureSubstitution3;
 
-lookup SingleSubstitution6 {
+lookup SingleSubstitution5 {
     sub emdash by emdash.ccmp;
-} SingleSubstitution6;
+} SingleSubstitution5;
 
 lookup MultipleSubstitution1 {
     sub twoemdash by emdash.ccmp emdash;
@@ -705,7 +705,7 @@ lookup MultipleSubstitution1 {
 } MultipleSubstitution1;
 
 lookup ChainedContextualGSUB2 {
-    sub emdash' lookup SingleSubstitution6 [emdash emdash.ccmp];
+    sub emdash' lookup SingleSubstitution5 [emdash emdash.ccmp];
 } ChainedContextualGSUB2;
 
 lookup SingleAdjustment1 {
@@ -1047,7 +1047,7 @@ feature vhal {
 
 feature ccmp {
     # script DFLT;
-        lookup SingleSubstitution5;
+        lookup LigatureSubstitution3;
         lookup MultipleSubstitution1;
         lookup ChainedContextualGSUB2;
 } ccmp;
