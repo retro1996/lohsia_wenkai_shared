@@ -29,6 +29,18 @@ languagesystem bopo dflt;
 
 @CG_1 = [zero one two three four five six seven eight nine];
 
+@LEFT_QUOTES = [quoteleft.full quotedblleft.full];
+@RIGHT_QUOTES = [quoteright.full quotedblright.full];
+
+@RIGHT_BRACKETS  = [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket];
+@LEFT_BRACKETS = [lefttortoiseshellbracket leftpointinganglebracket leftdoubleanglebracket leftcornerbracket leftwhitecornerbracket leftwhitelenticularbracket leftblacklenticularbracket reverseddoubleprimequotation fullwidthparenleft fullwidthleftsquarebracket fullwidthleftcurlybracket];
+
+@RIGHT_BRACKETS_WITH_QUOTES  = [@RIGHT_BRACKETS @RIGHT_QUOTES];
+@LEFT_BRACKETS_WITH_QUOTES  = [@LEFT_BRACKETS @LEFT_QUOTES];
+
+@BOTTOM_LEFT_POINT_PUNC = [ideographiccomma ideographicfullstop fullwidthcomma fullwidthfullstop];
+@LEFT_FULL_HEIGHT_PUNC = [fullwidthcolon fullwidthsemicolon fullwidthexclamationmark fullwidthquestionmark];
+
 #
 # Global lookup definitions
 #
@@ -798,19 +810,6 @@ lookup SingleAdjustment3 {
 } SingleAdjustment3;
 
 # /***** CHWS *****/
-
-@LEFT_QUOTES = [quoteleft.full quotedblleft.full];
-@RIGHT_QUOTES = [quoteright.full quotedblright.full];
-
-@RIGHT_BRACKETS  = [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket];
-@LEFT_BRACKETS = [lefttortoiseshellbracket leftpointinganglebracket leftdoubleanglebracket leftcornerbracket leftwhitecornerbracket leftwhitelenticularbracket leftblacklenticularbracket reverseddoubleprimequotation fullwidthparenleft fullwidthleftsquarebracket fullwidthleftcurlybracket];
-
-@RIGHT_BRACKETS_WITH_QUOTES  = [@RIGHT_BRACKETS @RIGHT_QUOTES];
-@LEFT_BRACKETS_WITH_QUOTES  = [@LEFT_BRACKETS @LEFT_QUOTES];
-
-@BOTTOM_LEFT_POINT_PUNC = [ideographiccomma ideographicfullstop fullwidthcomma fullwidthfullstop];
-@LEFT_FULL_HEIGHT_PUNC = [fullwidthcolon fullwidthsemicolon fullwidthexclamationmark fullwidthquestionmark];
-
 
 lookup PairAdjustment1 {
     pos @BOTTOM_LEFT_POINT_PUNC @RIGHT_BRACKETS_WITH_QUOTES -500;
