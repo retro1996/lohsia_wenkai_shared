@@ -1124,11 +1124,11 @@ feature ccmp {
 feature chws {
     # script DFLT;
         lookup PairAdjustment1;
-       ＃ lookup ChainedContextualGPOS1;
+       # lookup ChainedContextualGPOS1;
 } chws;
 
 feature vchw {
     # script DFLT;
         lookup PairAdjustment2;
-       ＃ lookup ChainedContextualGPOS2;
+       # lookup ChainedContextualGPOS2;
 } vchw;
