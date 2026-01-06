@@ -1123,13 +1123,31 @@ feature ccmp {
 } ccmp;
 
 feature chws {
-    # script DFLT;
+     script latn;
+        lookup PairAdjustment1;
+        lookup ChainedContextualGPOS1;
+     script hani;
+        lookup PairAdjustment1;
+        lookup ChainedContextualGPOS1;
+     script kana;
+        lookup PairAdjustment1;
+        lookup ChainedContextualGPOS1;
+     script bopo;
         lookup PairAdjustment1;
         lookup ChainedContextualGPOS1;
 } chws;
 
 feature vchw {
-    # script DFLT;
+     script latn;
+        lookup PairAdjustment2;
+        lookup ChainedContextualGPOS2;
+     script hani;
+        lookup PairAdjustment2;
+        lookup ChainedContextualGPOS2;
+     script kana;
+        lookup PairAdjustment2;
+        lookup ChainedContextualGPOS2;
+     script bopo;
         lookup PairAdjustment2;
         lookup ChainedContextualGPOS2;
 } vchw;
