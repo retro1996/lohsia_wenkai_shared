@@ -812,6 +812,7 @@ lookup SingleAdjustment3 {
 # /***** CHWS *****/
 
 lookup PairAdjustment1 {
+    lookupflag 0;
     pos @BOTTOM_LEFT_POINT_PUNC @RIGHT_BRACKETS_WITH_QUOTES -500;
     pos @BOTTOM_LEFT_POINT_PUNC @LEFT_BRACKETS_WITH_QUOTES -600;
 
@@ -848,6 +849,7 @@ lookup ChainedContextualGPOS1 {
 # /***** VCHW *****/
 
 lookup PairAdjustment2 {
+    lookupflag 0;
     pos [presentationformforverticalcomma presentationformforverticalideographicfullstop presentationformforverticalideographiccomma period.full.vert] [presentationformforverticalleftwhitelenticularbracket presentationformforverticalparenleft presentationformforverticallefttortoiseshellbracket presentationformforverticalleftanglebracket presentationformforverticalleftdoubleanglebracket presentationformforverticalleftcornerbracket presentationformforverticalleftwhitecornerbracket presentationformforverticalleftblacklenticularbracket presentationformforverticalleftcurlybracket presentationformforverticalleftsquarebracket] <0 0 0 -800>;
     pos [presentationformforverticalcomma presentationformforverticalideographicfullstop presentationformforverticalideographiccomma period.full.vert] [presentationformforverticalrightwhitelenticularbrakcet presentationformforverticalparenright presentationformforverticalrighttortoiseshellbracket presentationformforverticalrightanglebracket presentationformforverticalrightdoubleanglebracket presentationformforverticalrightcornerbracket presentationformforverticalrightwhitecornerbracket presentationformforverticalrightblacklenticularbracket presentationformforverticalrightcurlybracket presentationformforverticalrightsquarebracket] <0 0 0 -500>;
     pos [presentationformforverticalcolon presentationformforverticalsemicolon] [presentationformforverticalleftwhitelenticularbracket presentationformforverticalparenleft presentationformforverticallefttortoiseshellbracket presentationformforverticalleftanglebracket presentationformforverticalleftdoubleanglebracket presentationformforverticalleftcornerbracket presentationformforverticalleftwhitecornerbracket presentationformforverticalleftblacklenticularbracket presentationformforverticalleftcurlybracket presentationformforverticalleftsquarebracket] <0 0 0 -550>;
@@ -1123,11 +1125,11 @@ feature ccmp {
 feature chws {
     # script DFLT;
         lookup PairAdjustment1;
-       # lookup ChainedContextualGPOS1;
+        lookup ChainedContextualGPOS1;
 } chws;
 
 feature vchw {
     # script DFLT;
         lookup PairAdjustment2;
-       # lookup ChainedContextualGPOS2;
+        lookup ChainedContextualGPOS2;
 } vchw;
