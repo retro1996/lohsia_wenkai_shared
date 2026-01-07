@@ -1384,7 +1384,7 @@ lookup PairAdjustment1 {
     pos fullwidthexclamationmark fullwidthexclamationmark -600;
     pos fullwidthexclamationmark fullwidthparenleft -600;
     pos fullwidthexclamationmark fullwidthparenright -500;
-    pos fullwidthexclamationmark fullwidthquestionmark -500;
+    pos fullwidthexclamationmark fullwidthquestionmark -600;
     pos fullwidthexclamationmark fullwidthleftsquarebracket -600;
     pos fullwidthexclamationmark fullwidthrightsquarebracket -500;
     pos fullwidthexclamationmark fullwidthleftcurlybracket -600;
