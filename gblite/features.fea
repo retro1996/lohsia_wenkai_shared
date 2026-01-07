@@ -29,18 +29,6 @@ languagesystem bopo dflt;
 
 @CG_1 = [zero one two three four five six seven eight nine];
 
-@LEFT_QUOTES = [quoteleft.full quotedblleft.full];
-@RIGHT_QUOTES = [quoteright.full quotedblright.full];
-
-@RIGHT_BRACKETS  = [righttortoiseshellbracket rightpointinganglebracket rightdoubleanglebracket rightcornerbracket rightwhitecornerbracket rightwhitelenticularbracket rightblacklenticularbracket doubleprimequotation fullwidthparenright fullwidthrightsquarebracket fullwidthrightcurlybracket];
-@LEFT_BRACKETS = [lefttortoiseshellbracket leftpointinganglebracket leftdoubleanglebracket leftcornerbracket leftwhitecornerbracket leftwhitelenticularbracket leftblacklenticularbracket reverseddoubleprimequotation fullwidthparenleft fullwidthleftsquarebracket fullwidthleftcurlybracket];
-
-@RIGHT_BRACKETS_WITH_QUOTES  = [@RIGHT_BRACKETS @RIGHT_QUOTES];
-@LEFT_BRACKETS_WITH_QUOTES  = [@LEFT_BRACKETS @LEFT_QUOTES];
-
-@BOTTOM_LEFT_POINT_PUNC = [ideographiccomma ideographicfullstop fullwidthcomma fullwidthfullstop];
-@LEFT_FULL_HEIGHT_PUNC = [fullwidthcolon fullwidthsemicolon fullwidthexclamationmark fullwidthquestionmark];
-
 #
 # Global lookup definitions
 #
@@ -809,64 +797,6 @@ lookup SingleAdjustment3 {
     pos katakanahiraganasemivoicedsoundmarkcomb <500 1000 0 -1000>;
 } SingleAdjustment3;
 
-# /***** CHWS *****/
-
-lookup PairAdjustment1 {
-    lookupflag 0;
-    pos @BOTTOM_LEFT_POINT_PUNC @RIGHT_BRACKETS_WITH_QUOTES -500;
-    pos @BOTTOM_LEFT_POINT_PUNC @LEFT_BRACKETS_WITH_QUOTES -600;
-
-    pos @LEFT_BRACKETS @LEFT_BRACKETS_WITH_QUOTES -400;
-    pos @LEFT_QUOTES @LEFT_BRACKETS -400;
-    pos @LEFT_QUOTES @LEFT_QUOTES -500;
-
-    pos @RIGHT_BRACKETS_WITH_QUOTES @BOTTOM_LEFT_POINT_PUNC -500;
-    pos @RIGHT_BRACKETS_WITH_QUOTES @LEFT_BRACKETS -600;
-    pos @RIGHT_BRACKETS @LEFT_QUOTES -600;
-    pos @RIGHT_BRACKETS @RIGHT_BRACKETS_WITH_QUOTES -400;
-    pos @RIGHT_QUOTES @RIGHT_BRACKETS -400;
-    pos @RIGHT_QUOTES @LEFT_QUOTES -800;
-    pos @RIGHT_QUOTES @RIGHT_QUOTES -500;
-
-    pos fullwidthexclamationmark fullwidthexclamationmark -600;
-    pos fullwidthexclamationmark fullwidthquestionmark -500;
-    pos fullwidthquestionmark fullwidthexclamationmark -500;
-    pos fullwidthquestionmark fullwidthquestionmark -400;
-
-    pos @RIGHT_BRACKETS_WITH_QUOTES @LEFT_FULL_HEIGHT_PUNC -500;
-    pos @LEFT_FULL_HEIGHT_PUNC @LEFT_BRACKETS_WITH_QUOTES -600;
-    pos [fullwidthcolon fullwidthsemicolon fullwidthexclamationmark] @RIGHT_BRACKETS_WITH_QUOTES -500;
-    pos fullwidthquestionmark @RIGHT_BRACKETS_WITH_QUOTES -400;
-} PairAdjustment1;
-
-lookup ChainedContextualGPOS1 {
-    pos  @RIGHT_BRACKETS_WITH_QUOTES' 50 @LEFT_FULL_HEIGHT_PUNC' -250 @LEFT_BRACKETS_WITH_QUOTES ;
-    pos  @RIGHT_BRACKETS_WITH_QUOTES' -50 @BOTTOM_LEFT_POINT_PUNC' -50 @LEFT_BRACKETS_WITH_QUOTES ;
-} ChainedContextualGPOS1;
-
-# /***** CHWS END *****/
-
-# /***** VCHW *****/
-
-lookup PairAdjustment2 {
-    lookupflag 0;
-    pos [presentationformforverticalcomma presentationformforverticalideographicfullstop presentationformforverticalideographiccomma period.full.vert] [presentationformforverticalleftwhitelenticularbracket presentationformforverticalparenleft presentationformforverticallefttortoiseshellbracket presentationformforverticalleftanglebracket presentationformforverticalleftdoubleanglebracket presentationformforverticalleftcornerbracket presentationformforverticalleftwhitecornerbracket presentationformforverticalleftblacklenticularbracket presentationformforverticalleftcurlybracket presentationformforverticalleftsquarebracket] <0 0 0 -800>;
-    pos [presentationformforverticalcomma presentationformforverticalideographicfullstop presentationformforverticalideographiccomma period.full.vert] [presentationformforverticalrightwhitelenticularbrakcet presentationformforverticalparenright presentationformforverticalrighttortoiseshellbracket presentationformforverticalrightanglebracket presentationformforverticalrightdoubleanglebracket presentationformforverticalrightcornerbracket presentationformforverticalrightwhitecornerbracket presentationformforverticalrightblacklenticularbracket presentationformforverticalrightcurlybracket presentationformforverticalrightsquarebracket] <0 0 0 -500>;
-    pos [presentationformforverticalcolon presentationformforverticalsemicolon] [presentationformforverticalleftwhitelenticularbracket presentationformforverticalparenleft presentationformforverticallefttortoiseshellbracket presentationformforverticalleftanglebracket presentationformforverticalleftdoubleanglebracket presentationformforverticalleftcornerbracket presentationformforverticalleftwhitecornerbracket presentationformforverticalleftblacklenticularbracket presentationformforverticalleftcurlybracket presentationformforverticalleftsquarebracket] <0 0 0 -550>;
-    pos [presentationformforverticalexclamationmark presentationformforverticalquestionmark] [presentationformforverticalleftwhitelenticularbracket presentationformforverticalparenleft presentationformforverticallefttortoiseshellbracket presentationformforverticalleftanglebracket presentationformforverticalleftdoubleanglebracket presentationformforverticalleftcornerbracket presentationformforverticalleftwhitecornerbracket presentationformforverticalleftblacklenticularbracket presentationformforverticalleftcurlybracket presentationformforverticalleftsquarebracket] <0 0 0 -500>;
-    pos [presentationformforverticalleftwhitelenticularbracket presentationformforverticalparenleft presentationformforverticallefttortoiseshellbracket presentationformforverticalleftanglebracket presentationformforverticalleftdoubleanglebracket presentationformforverticalleftcornerbracket presentationformforverticalleftwhitecornerbracket presentationformforverticalleftblacklenticularbracket presentationformforverticalleftcurlybracket presentationformforverticalleftsquarebracket] [presentationformforverticalleftwhitelenticularbracket presentationformforverticalparenleft presentationformforverticallefttortoiseshellbracket presentationformforverticalleftanglebracket presentationformforverticalleftdoubleanglebracket presentationformforverticalleftcornerbracket presentationformforverticalleftwhitecornerbracket presentationformforverticalleftblacklenticularbracket presentationformforverticalleftcurlybracket presentationformforverticalleftsquarebracket] <0 0 0 -400>;
-    pos [presentationformforverticalrightwhitelenticularbrakcet presentationformforverticalparenright presentationformforverticalrighttortoiseshellbracket presentationformforverticalrightanglebracket presentationformforverticalrightdoubleanglebracket presentationformforverticalrightcornerbracket presentationformforverticalrightwhitecornerbracket presentationformforverticalrightblacklenticularbracket presentationformforverticalrightcurlybracket presentationformforverticalrightsquarebracket] [presentationformforverticalrightwhitelenticularbrakcet presentationformforverticalparenright presentationformforverticalrighttortoiseshellbracket presentationformforverticalrightanglebracket presentationformforverticalrightdoubleanglebracket presentationformforverticalrightcornerbracket presentationformforverticalrightwhitecornerbracket presentationformforverticalrightblacklenticularbracket presentationformforverticalrightcurlybracket presentationformforverticalrightsquarebracket] <0 0 0 -400>;
-    pos [presentationformforverticalrightwhitelenticularbrakcet presentationformforverticalparenright presentationformforverticalrighttortoiseshellbracket presentationformforverticalrightanglebracket presentationformforverticalrightdoubleanglebracket presentationformforverticalrightcornerbracket presentationformforverticalrightwhitecornerbracket presentationformforverticalrightblacklenticularbracket presentationformforverticalrightcurlybracket presentationformforverticalrightsquarebracket] [presentationformforverticalleftwhitelenticularbracket presentationformforverticalparenleft presentationformforverticallefttortoiseshellbracket presentationformforverticalleftanglebracket presentationformforverticalleftdoubleanglebracket presentationformforverticalleftcornerbracket presentationformforverticalleftwhitecornerbracket presentationformforverticalleftblacklenticularbracket presentationformforverticalleftcurlybracket presentationformforverticalleftsquarebracket] <0 0 0 -600>;
-    pos [presentationformforverticalrightwhitelenticularbrakcet presentationformforverticalparenright presentationformforverticalrighttortoiseshellbracket presentationformforverticalrightanglebracket presentationformforverticalrightdoubleanglebracket presentationformforverticalrightcornerbracket presentationformforverticalrightwhitecornerbracket presentationformforverticalrightblacklenticularbracket presentationformforverticalrightcurlybracket presentationformforverticalrightsquarebracket] [presentationformforverticalcomma presentationformforverticalideographicfullstop presentationformforverticalideographiccomma presentationformforverticalcolon presentationformforverticalsemicolon presentationformforverticalexclamationmark presentationformforverticalquestionmark period.full.vert ] <0 0 0 -500>;
-} PairAdjustment2;
-
-lookup ChainedContextualGPOS2 {
-    pos [presentationformforverticalrightwhitelenticularbrakcet presentationformforverticalparenright presentationformforverticalrighttortoiseshellbracket presentationformforverticalrightanglebracket presentationformforverticalrightdoubleanglebracket presentationformforverticalrightcornerbracket presentationformforverticalrightwhitecornerbracket presentationformforverticalrightblacklenticularbracket presentationformforverticalrightcurlybracket presentationformforverticalrightsquarebracket] ' <0 0 0 -10> [presentationformforverticalcomma presentationformforverticalideographicfullstop presentationformforverticalideographiccomma period.full.vert]' <0 0 0 -10> [presentationformforverticalleftwhitelenticularbracket presentationformforverticalparenleft presentationformforverticallefttortoiseshellbracket presentationformforverticalleftanglebracket presentationformforverticalleftdoubleanglebracket presentationformforverticalleftcornerbracket presentationformforverticalleftwhitecornerbracket presentationformforverticalleftblacklenticularbracket presentationformforverticalleftcurlybracket presentationformforverticalleftsquarebracket];
-    pos [presentationformforverticalrightwhitelenticularbrakcet presentationformforverticalparenright presentationformforverticalrighttortoiseshellbracket presentationformforverticalrightanglebracket presentationformforverticalrightdoubleanglebracket presentationformforverticalrightcornerbracket presentationformforverticalrightwhitecornerbracket presentationformforverticalrightblacklenticularbracket presentationformforverticalrightcurlybracket presentationformforverticalrightsquarebracket] ' <0 0 0 -10> [presentationformforverticalcolon presentationformforverticalsemicolon presentationformforverticalexclamationmark presentationformforverticalquestionmark]' <0 0 0 -10> [presentationformforverticalleftwhitelenticularbracket presentationformforverticalparenleft presentationformforverticallefttortoiseshellbracket presentationformforverticalleftanglebracket presentationformforverticalleftdoubleanglebracket presentationformforverticalleftcornerbracket presentationformforverticalleftwhitecornerbracket presentationformforverticalleftblacklenticularbracket presentationformforverticalleftcurlybracket presentationformforverticalleftsquarebracket];
-} ChainedContextualGPOS2;
-
-# /***** VCHW END *****/
-
 #
 # Feature definitions
 #
@@ -1122,32 +1052,3 @@ feature ccmp {
         lookup ChainedContextualGSUB2;
 } ccmp;
 
-feature chws {
-     script latn;
-        lookup PairAdjustment1;
-        lookup ChainedContextualGPOS1;
-     script hani;
-        lookup PairAdjustment1;
-        lookup ChainedContextualGPOS1;
-     script kana;
-        lookup PairAdjustment1;
-        lookup ChainedContextualGPOS1;
-     script bopo;
-        lookup PairAdjustment1;
-        lookup ChainedContextualGPOS1;
-} chws;
-
-feature vchw {
-     script latn;
-        lookup PairAdjustment2;
-        lookup ChainedContextualGPOS2;
-     script hani;
-        lookup PairAdjustment2;
-        lookup ChainedContextualGPOS2;
-     script kana;
-        lookup PairAdjustment2;
-        lookup ChainedContextualGPOS2;
-     script bopo;
-        lookup PairAdjustment2;
-        lookup ChainedContextualGPOS2;
-} vchw;
