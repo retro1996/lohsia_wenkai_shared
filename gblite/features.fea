@@ -808,7 +808,7 @@ lookup SingleAdjustment3 {
 
 lookup PairAdjustment1 {
     pos fullwidthexclamationmark fullwidthexclamationmark -600;
-    pos fullwidthexclamationmark fullwidthquestionmark -500;
+    pos fullwidthexclamationmark fullwidthquestionmark -600;
     pos fullwidthquestionmark fullwidthexclamationmark -500;
     pos fullwidthquestionmark fullwidthquestionmark -400;
 
