@@ -1855,6 +1855,22 @@
         <string>quotedblleft</string>
         <key>201D</key>
         <string>quotedblright</string>
+        <key>FF0C</key>
+        <string>fullwidthcomma</string>
+        <key>3001</key>
+        <string>ideographiccomma</string>
+        <key>FF0E</key>
+        <string>fullwidthfullstop</string>
+        <key>FF1B</key>
+        <string>fullwidthsemicolon</string>
+        <key>FF1A</key>
+        <string>fullwidthcolon</string>
+        <key>FF1F</key>
+        <string>fullwidthquestionmark</string>
+        <key>FF01</key>
+        <string>fullwidthexclamationmark</string>
+        <key>3002</key>
+        <string>ideographicfullstop</string>
       </dict>
       <key>FE01</key>
       <dict>
@@ -1866,6 +1882,22 @@
         <string>quotedblleft.full</string>
         <key>201D</key>
         <string>quotedblright.full</string>
+        <key>FF0C</key>
+        <string>smallcomma</string>
+        <key>3001</key>
+        <string>smallideographiccomma</string>
+        <key>FF0E</key>
+        <string>smallfullstop</string>
+        <key>FF1B</key>
+        <string>smallsemicolon</string>
+        <key>FF1A</key>
+        <string>smallcolon</string>
+        <key>FF1F</key>
+        <string>smallquestionmark</string>
+        <key>FF01</key>
+        <string>smallexclamationmark</string>
+        <key>3002</key>
+        <string>ideographicfullstop.1</string>
       </dict>
     </dict>
   </dict>
