@@ -889,6 +889,13 @@ lookup SingleAdjustment1 {
     pos quotedblright.full -500;
     pos quoteleft.full <-500 0 -500 0>;
     pos quoteright.full -500;
+    pos smallcomma <-250 0 -500 0>;
+    pos smallideographiccomma <-250 0 -500 0>;
+    pos smallfullstop <-250 0 -500 0>;
+    pos smallsemicolon <-250 0 -500 0>;
+    pos smallcolon <-250 0 -500 0>;
+    pos smallexclamationmark <-250 0 -500 0>;
+    pos ideographicfullstop.1 <-250 0 -500 0>;
 } SingleAdjustment1;
 
 lookup SingleAdjustment2 {
@@ -925,6 +932,10 @@ lookup SingleAdjustment2 {
     pos rightwhiteparenthesis.full.vert <0 0 0 -500>;
     pos leftwhitesquarebracket.vert <0 500 0 -500>;
     pos rightwhitesquarebracket.vert <0 0 0 -500>;
+    pos smallcomma <0 250 0 -500>;
+    pos smallideographiccomma <0 250 0 -500>;
+    pos smallfullstop <0 250 0 -500>;
+    pos ideographicfullstop.1 <0 250 0 -500>;
 } SingleAdjustment2;
 
 lookup SingleAdjustment3 {
